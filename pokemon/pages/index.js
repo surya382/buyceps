@@ -76,7 +76,7 @@ export default function Home({pokemonList}) {
 
 
 export async function getStaticProps() {
-  const pokemonList = await getPokemonList();
+  const pokemonList = await getPokemonList(60);
 
   return {
     props: {

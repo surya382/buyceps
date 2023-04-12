@@ -5,7 +5,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export const getPokemonList = async (limit=60) => {
+export const getPokemonList = async (limit=151) => {
   const { data } = await client.query({
     query: gql`
     query {
@@ -29,7 +29,7 @@ export const getPokemonList = async (limit=60) => {
 
 export const getPokemon = async (id) => {
 
-  console.log(id);
+  
   const { data } = await client.query({
     query: gql`
     query pokemon($id: String!) {
@@ -59,3 +59,28 @@ export const getPokemon = async (id) => {
   
   return data.pokemon;
 };
+
+
+
+export const evolution=async(id)=>{
+
+  const {data}= await client.query({
+    query: gql `
+    query pokemon($id: String!) {
+      pokemon(id: $id){
+      
+        evolutions{
+          id
+          number
+          name
+          types
+          image
+        }
+      }
+    }
+    `,
+    variables: { id: id },
+  });
+  return data.pokemon.evolutions;
+}
+
