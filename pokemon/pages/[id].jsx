@@ -54,8 +54,8 @@ const Singlepok = ({pokemon}) => {
 
           <Flex gap="20px" p={3}>
             
-              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Minimum height : "{pokemon.height.minimum}"</Button>
-              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Maximum height : "{pokemon.height.maximum}"</Button>
+              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Minimum height : {pokemon.height.minimum}</Button>
+              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Maximum height : {pokemon.height.maximum}</Button>
             
          </Flex>
          
@@ -64,8 +64,8 @@ const Singlepok = ({pokemon}) => {
 
           <Flex gap="20px" p={3}>
             
-              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Minimum height : "{pokemon.weight.minimum}"</Button>
-              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Maximum height : "{pokemon.weight.maximum}"</Button>
+              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Minimum height : {pokemon.weight.minimum}</Button>
+              <Button backgroundColor="blue.100" pt={1} pb={1} height="-webkit-fit-content" > Maximum height : {pokemon.weight.maximum}</Button>
             
          </Flex>
          
