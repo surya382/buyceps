@@ -65,7 +65,7 @@ export const getPokemon = async (id) => {
 export const evolution=async(id)=>{
 
   const {data}= await client.query({
-    query: gql `
+    query: gql`
     query pokemon($id: String!) {
       pokemon(id: $id){
       

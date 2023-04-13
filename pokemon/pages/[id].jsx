@@ -125,7 +125,7 @@ const Singlepok = ({pokemon}) => {
 
           
             <Box border="1px solid goldenrod" borderRadius="10px" p={4}>
-            <Image width="100%" height="200px"  src={pokemon.image}/>
+            <Image width="100%" height="200px"  src={pokemon.image} alt="image link broked"/>
             <Text fontSize="xl">{pokemon.name} #{pokemon.number}</Text>
             <Text fontWeight="bold" mt={2}>Type: </Text>
                   <Flex gap="20px" mt={2}>
@@ -144,7 +144,7 @@ const Singlepok = ({pokemon}) => {
               evol.map((el,i)=>
               <Flex key={el.id} gap="20px">
               <Box  border="1px solid goldenrod" borderRadius="10px" p={4}>
-                  <Image width="100%" height="200px"   src={el.image}/>
+                  <Image width="100%" height="200px"   src={el.image} alt="image link broked"/>
                    
                   <Text fontSize="xl">{el.name} #{el.number}</Text>
 

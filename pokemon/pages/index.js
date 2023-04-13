@@ -52,7 +52,7 @@ export default function Home({pokemonList}) {
       {
         data.map((el)=>
         <Link key={el.id} href={`/${el.id}`}><Box  p={5} border="1px solid goldenrod" borderRadius="20px">
-          <Image width="100%" height="250px" src={el.image}/>
+          <Image width="100%" height="250px" src={el.image} alt="image link broked"/>
           <Text color="grey" fontWeight="bold">#{el.number}</Text>
           <Text fontWeight="bold" fontSize="2xl">{el.name}</Text>
 
