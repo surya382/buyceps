@@ -4,7 +4,7 @@ import {ChevronRightIcon} from "@chakra-ui/icons"
 import React, { useState } from 'react'
 import {getPokemon, getPokemonList,evolution} from "../components/graphql"
 
-const singlepok = ({pokemon}) => {
+const Singlepok = ({pokemon}) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [loading,setloading]=useState(false);
@@ -201,4 +201,4 @@ export async function getStaticPaths() {
     }
   }
 
-export default singlepok
+export default Singlepok
